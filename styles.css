@@ -1,0 +1,102 @@
+td div {
+
+    padding: 20px;
+}
+
+
+tr , td{
+
+       
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 60px;
+        
+      
+  
+}
+
+
+
+
+
+#ROJO {
+    color: red;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    place-items: center;
+    margin: auto;
+}
+
+
+form {
+
+   margin: 0 auto;
+   
+}
+
+.container {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    place-items: center;
+    margin: auto;
+    
+}
+
+
+
+#restart {
+
+    margin: 0 auto;
+}
+
+label {
+    padding: 30px;
+}
+
+
+input {
+    padding-right: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: solid 1px black;
+    border-radius: 25px;
+    
+}
+
+ #general2 {
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: center;
+    place-items: center;
+}
+
+#restart {
+
+    padding: 15px;
+}
+
+#restart:hover {
+    background-color: blue;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
