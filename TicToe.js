@@ -17,7 +17,7 @@ const GameBoard = () => {
                 this.tableCreated = false; // La tabla ha sido eliminada
                 let NoWinners = document.createElement('img');
                 document.getElementById('boxContainer').append(NoWinners);
-                NoWinners.src = "./WinnerIsX.gif";
+                NoWinners.src = "https://media.giphy.com/media/axcghTIQpVT90Z5OQ0/giphy.gif";
                 Game.howcelldsLeft();
             } else if (message === "O") {
                 console.log("Winner is O");
@@ -26,7 +26,7 @@ const GameBoard = () => {
                 this.tableCreated = false; // La tabla ha sido eliminada
                 let NoWinners = document.createElement('img');
                 document.getElementById('boxContainer').append(NoWinners);
-                NoWinners.src = "./WinnerIsO.gif";
+                NoWinners.src = "https://media.giphy.com/media/5Wp8ft5ASGijxkgIs8/giphy.gif";
                 Game.howcelldsLeft();
             } else if (this.celldsLeft == 0) {
                 console.log("No winners");
@@ -35,7 +35,7 @@ const GameBoard = () => {
                 this.tableCreated = false; // La tabla ha sido eliminada
                 let NoWinners = document.createElement('img');
                 document.getElementById('boxContainer').append(NoWinners);
-                NoWinners.src = "./noWinners.gif";
+                NoWinners.src = "https://media.giphy.com/media/mxuSaQnqIG1gPWoo6Q/giphy.gif";
             }
 
             this.howcelldsLeft(message);
