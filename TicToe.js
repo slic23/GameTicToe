@@ -17,7 +17,7 @@ const GameBoard = () => {
                 this.tableCreated = false; // La tabla ha sido eliminada
                 let NoWinners = document.createElement('img');
                 document.getElementById('boxContainer').append(NoWinners);
-                NoWinners.src = "WinnerIsX.gif";
+                NoWinners.src = "./WinnerIsX.gif";
                 Game.howcelldsLeft();
             } else if (message === "O") {
                 console.log("Winner is O");
@@ -26,7 +26,7 @@ const GameBoard = () => {
                 this.tableCreated = false; // La tabla ha sido eliminada
                 let NoWinners = document.createElement('img');
                 document.getElementById('boxContainer').append(NoWinners);
-                NoWinners.src = "WinnerIsO.gif";
+                NoWinners.src = "./WinnerIsO.gif";
                 Game.howcelldsLeft();
             } else if (this.celldsLeft == 0) {
                 console.log("No winners");
@@ -35,7 +35,7 @@ const GameBoard = () => {
                 this.tableCreated = false; // La tabla ha sido eliminada
                 let NoWinners = document.createElement('img');
                 document.getElementById('boxContainer').append(NoWinners);
-                NoWinners.src = "noWinners.gif";
+                NoWinners.src = "./noWinners.gif";
             }
 
             this.howcelldsLeft(message);
@@ -138,6 +138,7 @@ const GameBoard = () => {
                 event.preventDefault();
                 console.log("Restarting the game");
                 restartToNull();
+                location.reload()
             });
         },
 
@@ -162,7 +163,13 @@ const GameBoard = () => {
                     console.log("Cell already taken. Choose another one.");
                 }
             }));
+
+            
+    
+
         }
+
+
     };
 
     return Game;
